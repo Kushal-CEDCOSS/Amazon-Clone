@@ -1,0 +1,27 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 130vh;
+    width: 100%;
+    
+}
+.block::after{
+    content: '';
+    opacity: 0.90;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 130vh;
+    background-image: linear-gradient(to top, rgba(163, 209, 255, 0.534), whitesmoke, rgba(255, 255, 255, 0.404));
+}

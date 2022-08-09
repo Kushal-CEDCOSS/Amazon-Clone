@@ -1,0 +1,51 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 95vh;
+    width: 100%;
+}
+
+.Login>img{
+    width: 20%;
+    margin-top: 1%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 70vh;
+    width: 40%;
+    border: 1px solid rgb(211, 211, 211);
+}
+.loginEmail, .loginPassword{
+    padding: 1%;
+    max-width: 90%;
+}
+.loginEmail:focus, .loginPassword:focus{
+    outline-color: rgb(255, 123, 0);
+}
+.declaration{
+    font-size: 1.3vw;
+    margin-top: 1%;
+}
+
+.form > button{
+    width: 63%;
+    height: 5vh;
+    background-image: linear-gradient(to top, rgb(255, 145, 0),rgb(255, 219, 121));
+    border:1px solid rgb(255, 208, 0);
+}
+
+#registerButton{
+    width: 63%;
+    height: 5vh;
+    background-image: linear-gradient(to top, rgb(214, 214, 214),rgb(235, 235, 235));
+    border: 1px solid rgb(194, 194, 194);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

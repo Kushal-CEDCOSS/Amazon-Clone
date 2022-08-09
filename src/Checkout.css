@@ -1,0 +1,22 @@
+.Checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+}
+.checkoutArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 50vh;
+}
+.checkoutArea> img:first-child{
+    transform: rotateY(180deg);
+}
+.checkoutArea img{
+    width: 20%;
+}

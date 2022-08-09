@@ -1,0 +1,218 @@
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 15vh;
+    background-color: black;
+    padding: 2%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.logo{
+    width: 15%;
+    filter: brightness(115%);
+    cursor: pointer;
+}
+
+.searchContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+}
+.searchContainer > input[type="text"]{
+    height: 100%;
+    outline-width: 0;
+    border: none;
+    width: 80%;
+    padding: 1%;
+}
+.searchContainer > button{
+    width: 10%;
+    height: 100%;
+    background-color: rgb(253, 166, 36);
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.searchContainer > button:hover{
+    background-color: rgb(255, 145, 0);
+}
+.searchContainer > select{
+    width: 10%;
+    height: 100%;
+    outline-width: 0;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.searchContainer > select:hover{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+
+.fa-shopping-cart{
+    color: white;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+.link{
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+}
+.link:hover
+{
+    color: white;
+}
+.BigSmall{
+    width: 10%;
+    height: 90%;
+    padding-top: 1%;
+    text-decoration: none;
+}
+.BigSmall > p{
+    font-size: 1.65vw;
+    color: white;
+}
+.bigFont{
+    font-size: 1.8vw;
+    color: white;
+    font-weight: 600;
+}
+.cartCounter{
+    color: #FF710F;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.5vw;
+    right: 0.5vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.EmptyCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 25vw;
+}
+.EmptyCart img{
+    width: 15vw;
+}
+.EmptyCart h3, .EmptyCart  h4{
+    font-family: 'Mochiy Pop One', sans-serif;
+    padding: 5%;
+    color: rgb(125, 54, 139);
+}
+.CartDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: fit-content;
+    width: 65vw;
+}
+.CartDisplay h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgb(29, 155, 172);
+    margin: 2%;
+}
+table{
+    width: 95%;
+    margin: 5% 1% 5% 1%;
+    border: 1px solid rgb(136, 136, 136);
+    border-bottom: 2px solid black;
+    box-shadow: 0px 3px 5px grey;
+    border-collapse: collapse;
+}
+tr{
+    width: 100%;
+}
+tr:nth-child(2n+2)
+{
+    background-image: linear-gradient(to right, white, rgb(250, 250, 250));
+}
+td,th{
+    text-align: center;
+    width: 25%;
+    padding: 1%;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    font-size: 1.65vw;
+}
+
+td img{
+    width: 75%;
+}
+td span{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1.8vw;
+}
+td button{
+    border: none;
+    border-radius: 50%;
+    width: 2.8vw;
+    height: 2.8vw;
+    background-color: #FF710F;
+    box-shadow: 1px 1px 2px grey;
+    font-size: 1.8vw;
+}
+td button:hover{
+    box-shadow: 1px 2px 2px black;
+}
+
+.fa-trash-can{
+    color: rgb(240, 0, 0);
+    cursor: pointer;
+}
+.fa-trash-can:hover{
+    transform: scale(1.025,1.025);
+}
+.checkout{
+    border: none;
+    padding: 2%;
+    width: 15vw;
+    border-radius: 5px;
+    background-color: rgb(41, 154, 158);
+    color: white;
+    font-size: 2vw;
+    box-shadow: 1px 1px 5px rgb(124, 124, 124);
+}
+@media screen and (max-width: 700px){
+    .Navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 20vw;
+    }
+    .searchContainer{
+        margin-top: 5%;
+        width: 70%;
+    }
+    .BigSmall{
+        margin-top: 2%;
+    }
+    .BigSmall > p{
+        font-size: 2vw;
+    }
+    .cartCounter{
+        display: none;
+    }
+}
